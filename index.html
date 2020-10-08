@@ -138,7 +138,16 @@
         .linkControl2,
         .linkControl2 a {
             color: #5a5a5a !important;
+        }
+
+        .linkControl3,
+        .linkControl3 a {
+            color: #000000 !important;
             
+        }
+
+        .linkControlNoUnderline {
+          text-decoration: none !important;
         }
         
         .force_wrap {
@@ -186,36 +195,36 @@
         }
 
         @media only screen and (max-width:599px) {
-            .wrapper {
-                width: 100% !important;
-                height: auto !important;
-            }
-            .wrapper-2 {
-                width: 90% !important;
-            }
-            .wrapper-3 {
-                width: 75% !important;
-            }
-            .hide_mobile {
-                display: none !important;
-            }
-            .mBorder {
-                border: none !important;
-            }
-            .disp_block {
-                display: block !important;
-            }
-            .threeColumnModuleBorder {
-                border: none !important;
-            }
-            .mSpacer15 {
-            height:25px !important;
-            font-size:25px !important;
-            line-height:25px !important;
-            }
-            .h12AColumn {
-            height: 300px !important;
-            }
+          .wrapper {
+              width: 100% !important;
+              height: auto !important;
+          }
+          .wrapper-2 {
+              width: 90% !important;
+          }
+          .wrapper-3 {
+              width: 75% !important;
+          }
+          .hide_mobile {
+              display: none !important;
+          }
+          .mBorder {
+              border: none !important;
+          }
+          .disp_block {
+              display: block !important;
+          }
+          .threeColumnModuleBorder {
+              border: none !important;
+          }
+          .mSpacer15 {
+          height:25px !important;
+          font-size:25px !important;
+          line-height:25px !important;
+          }
+          .h12AColumn {
+          height: 300px !important;
+          }
         }
     </style>
 
@@ -388,7 +397,6 @@
                         <tbody>
                            
 
-
                             <!-- 1. Preheader Text Module -->
                             <tr class="mktoModule" id="preheaderTextEditModule" mktoname="1. Preheader Text Edit Module">
                               <td width="100%">
@@ -405,7 +413,6 @@
                                 </table>
                               </td>
                             </tr>
-
 
 
                             <!-- 2. View Online Text Module -->
@@ -444,10 +451,6 @@
                             </tr>
 
 
-
-
-
-
                             <!-- 3. Header Module A -->
                             <tr class="mktoModule" id="headerModuleA" mktoname="3. Header Module A" bgcolor="${headerModuleABackgroundColor}">
                                 <td>
@@ -467,9 +470,9 @@
                                                                             <tr>
                                                                                 <td height="10" style="font-size: 10px;line-height: 10px">
                                                                                     <div class="mktEditable" id="digikeyHeaderLogo" alt="Digi-Key Logo" mktoname="Digi-Key Logo" mktoImgWidth="125">
-                                                                                        <a href="https://{{my.0_domainnamelogo}}/?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=dklogo"
+                                                                                        <a href="https://{{my.0_domainnamelogo}}/?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=dklogo_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
                                                                                             target="_blank" title="Digi-Key">
-                                                                                            <img src="https://na-ab33.marketo.com/rs/digikey/images/DKE_Logo_125px.png" alt="Digi-Key" width="125"></a>
+                                                                                            <img src="https://info.digikey.com/rs/digikey/images/DKE_Logo_125px.png" alt="Digi-Key" width="125"></a>
                                                                                         </a>
                                                                                     </div>
                                                                                 </td>
@@ -493,7 +496,7 @@
                                                                                 <td align="right" class="linkControl1">
                                                                                   <span style="{{my.wordbreak}}">
                                                                                     <div class="mktEditable" id="headerAtext" mktoname="Header A Text">
-                                                                                        <a class="linkControl1" href="{{my.03_headerURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=header3text" target="_blank" style="color:$headerATextColor};font-family: Arial, sans-serif;text-decoration: underline!important;text-align: right;font-size: ${headerATextSize}px;display:${headerAShowText}" title="{{my.03_header}}">
+                                                                                        <a class="linkControl1" href="https://{{my.0_domainname}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=header3text_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" style="color:$headerATextColor};font-family: Arial, sans-serif;text-decoration: underline!important;text-align: right;font-size: ${headerATextSize}px;display:${headerAShowText}" title="{{my.03_header}}">
                                                                                             <strong>{{my.03_header}}</strong>
                                                                                         </a>
                                                                                     </div>
@@ -513,17 +516,16 @@
                                                                     <table width="175" border="0" cellspacing="0" cellpadding="0" align="right" class="wrapper header3AHideSearch" style="width: 175px;" style="display:${headerAShowSearch}">
                                                                         <tr class="header3AHideSearch" style="display:${headerAShowSearch}">
                                                                             <td class="header3AHideSearch" style="display:${headerAShowSearch}">
-                                                                            
                                                                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="width: 100%;" align="right" class="wrapper header3AHideSearch" style="display:${headerAShowSearch}">
                                                                                     <tr>
                                                                                         <td>
                                                                                             <table width="80%" height="30" border="0" cellspacing="0" cellpadding="0" align="right" class="mobile_center2" bgcolor="#ffffff" style="width: 80%;height: 30px;" valign="middle">
                                                                                                 <tbody>
                                                                                                     <tr>
-                                                                                                        <td bgcolor="#FFFFFF" align="left" valign="middle" width="75" height="30" style="height:30; text-align: left; vertical-align: middle; width: 75px; font-family: Arial, sans-serif; font-size:16px; color: #676767; background-color: #FFFFFF; text-decoration: none;" class="linkControl1">
+                                                                                                      <td bgcolor="#FFFFFF" align="left" valign="middle" width="75" height="30" style="height:30; text-align: left; vertical-align: middle; width: 75px; font-family: Arial, sans-serif; font-size:16px; color: #676767; background-color: #FFFFFF; text-decoration: none;" class="linkControl1">
                                                                                                           <span style="{{my.wordbreak}}">
                                                                                                             <div class="mktEditable linkControl1" id="searchNowTextHeaderModule3" mktoname="Search Box Text">
-                                                                                                                <a href="https://{{my.0_domainname}}/products/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=search"
+                                                                                                                <a href="https://{{my.0_domainname}}/products/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=search_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
                                                                                                                 style="text-decoration: none !important; color: #676767 !important; font-family: Arial, sans-serif; font-size:12px; background-color: #ffffff; vertical-align: middle;line-height: 12px;display:${headerAShowSearch}"
                                                                                                                 target="_blank" class="linkControl1" title="{{my.0_searchnow}}">{{my.0_searchnow}}
                                                                                                                 </a>
@@ -538,7 +540,7 @@
                                                                                                     <tr>
                                                                                                         <td bgcolor="#FFFFFF">&nbsp;</td>
                                                                                                         <td bgcolor="#FFFFFF" height="30" width="10" align="center" valign="middle" class="inner mobile_center" style="vertical-align: middle; font-size: 0px;width:10px;">
-                                                                                                            <a href="https://{{my.0_domainname}}/products/{{my.0_language}}?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=search"
+                                                                                                            <a href="https://{{my.0_domainname}}/products/{{my.0_language}}?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=search_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
                                                                                                                 style="text-decoration: none !important; color: #676767 !important; font-family: Arial, sans-serif; font-size:0; background-color: #ffffff; vertical-align: middle; text-align: left !important;display:${headerAShowSearch}"
                                                                                                                 target="_blank" title="{{my.0_searchnow}}" title="{{my.0_searchnow}}"><img src="https://image.ibb.co/j8bmjm/download_1.png" width="10" style="width: 10;"></a>
                                                                                                         </td>
@@ -548,7 +550,6 @@
                                                                                         </td>
                                                                                     </tr>
                                                                                 </table>
-                                                                                
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -569,10 +570,6 @@
                                     </table>
                                 </td>
                             </tr>
-
-
-
-
 
 
                             <!-- 4. Header Module B -->
@@ -610,7 +607,7 @@
                                                 </td>
                                                 <td class="header3BHideImage" width="200" align="right" style="display:${headerBShowImage}">
                                                     <div class="mktEditable" id="headerModuleBImage" alt="Logo" mktoname="Header Module Image" mktEditableWidth="125">
-                                                        <a href="{{my.04_headerImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=header4Bimage" target="_blank" title="{{my.04_emailTitle}}">
+                                                        <a href="{{my.04_headerImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=header4Bimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.04_emailTitle}}">
                                                             <img src="{{my.04_headerImageSourceURL}}" alt="{{my.04_emailTitle}}" width="125"></a>
                                                         </a>
                                                     </div>
@@ -623,10 +620,6 @@
                                     </table>
                                 </td>
                             </tr>
-
-
-
-
 
 
                             <!-- 5. Email Title Module -->
@@ -674,7 +667,7 @@
                                                                                                                         <td bgcolor="#FFFFFF" align="left" valign="middle" width="75" height="30" style="height:30; text-align: left; vertical-align: middle; width: 75px; font-family: Arial, sans-serif; font-size:16px; color: #676767; background-color: #FFFFFF; text-decoration: none;" class="linkControl1">
                                                                                                                           <span style="{{my.wordbreak}}">
                                                                                                                             <div class="mktEditable linkControl1" id="searchNowTextTitleModule" mktoname="Search Now Text - Header Module">
-                                                                                                                              <a href="https://{{my.0_domainname}}/products/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=search"
+                                                                                                                              <a href="https://{{my.0_domainname}}/products/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=search_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
                                                                                                                                 style="text-decoration: none !important; color: #676767 !important; font-family: Arial, sans-serif; font-size:12px; background-color: #ffffff; vertical-align: middle;line-height: 12px;"
                                                                                                                                 target="_blank" class="linkControl1" title="{{my.0_searchnow}}">{{my.0_searchnow}}</a>
                                                                                                                             </div>
@@ -688,7 +681,7 @@
                                                                                                                     <tr>
                                                                                                                         <td bgcolor="#FFFFFF">&nbsp;</td>
                                                                                                                         <td bgcolor="#FFFFFF" height="30" width="10" align="center" valign="middle" class="inner mobile_center" style="vertical-align: middle; font-size: 0;width:10px;">
-                                                                                                                            <a href="https://{{my.0_domainname}}/products/{{my.0_language}}?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=search"
+                                                                                                                            <a href="https://{{my.0_domainname}}/products/{{my.0_language}}?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=search_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
                                                                                                                                 style="text-decoration: none !important; color: #676767 !important; font-family: Arial, sans-serif; font-size:0; background-color: #ffffff; vertical-align: middle; text-align: left !important;"
                                                                                                                                 target="_blank" title="{{my.0_searchnow}}" title="{{my.0_searchnow}}"><img src="https://image.ibb.co/j8bmjm/download_1.png" width="10" style="width: 10;"></a>
                                                                                                                         </td>
@@ -723,9 +716,6 @@
                                     </table>
                                 </td>
                             </tr>
-
-
-
 
 
 
@@ -796,7 +786,7 @@
                                                                                                                     <td class="a-white" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; mso-padding-alt: 10px 25px; line-height: 16px;font-weight: bold;text-decoration: none;border: ${backgroundModuleCTABorderThickness}px solid ${backgroundModuleCTABorderColor}"
                                                                                                                          align="center">
                                                                                                                          <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="backgroundImageCTA" mktoname="Background Module CTA">
-                                                                                                                            <a class="a-white" href="https://{{my.0_domainName}}/MyDigiKey?lang={{my.0_language}}&utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured1cta" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; line-height: 16px; font-weight: bold; text-decoration: none;" target="_blank" title="{{my.06_backgroundImageCTA}}">{{my.06_backgroundImageCTA}}</a>
+                                                                                                                            <a class="a-white" href="https://{{my.0_domainName}}/MyDigiKey?lang={{my.0_language}}&utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured1cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #ffffff; line-height: 16px; font-weight: bold; text-decoration: none;" target="_blank" title="{{my.06_backgroundImageCTA}}">{{my.06_backgroundImageCTA}}</a>
                                                                                                                         </div></span>
                                                                                                                     </td>
                                                                                                                 </tr>
@@ -841,7 +831,7 @@
                                     <table class="module_wrapper m_main" id="main" style="border-spacing: 0; border-collapse: collapse;" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                                         <tbody>
                                             <tr>
-                                                <td style="word-break: break-word;-moz-hyphens: none;hyphens: none;border-collapse: collapse;-webkit-hyphens: none;text-align: left;background-color:#cccccc;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;"
+                                                <td style="word-break: break-word;-moz-hyphens: none;hyphens: none;border-collapse: collapse;-webkit-hyphens: none;text-align: left;background-color:#ffffff;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;"
                                                     valign="top">
                                                     <center>
                                                         <table class="wrapper full" style="border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; width: 660px;" cellspacing="0" cellpadding="0" border="0" align="center" width="660">
@@ -857,7 +847,7 @@
                                                                                                 <tr style="outline: medium none;">
                                                                                                     <td style="-webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
                                                                                                         <div class="mktEditable responsive" id="mainHeaderImage" mktoName="Main Header Image" mktoImgWidth="660">
-                                                                                                            <a href="{{my.07_heroImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=module7image" title="{{my.07_heroImageAltText}}">
+                                                                                                            <a href="{{my.07_heroImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=module7image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.07_heroImageAltText}}">
                                                                                                                 <img class="responsive" src="{{my.07_heroImageSource}}" style="text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; outline: none; -ms-interpolation-mode: bicubic; line-height: 100%; max-width: 660px !important; display: block; width: 100%;"
                                                                                                                     alt="{{my.07_heroImageAltText}}" width="660"></a>
                                                                                                         </div>
@@ -910,7 +900,7 @@
                                                                                             <tr>
                                                                                                 <td align="center" valign="top" class="pb10">
                                                                                                     <div class="mktEditable responsive" id="productHighlightTopImageA" mktoName="Product Highlight Top Image" mktoImgWidth="200">
-                                                                                                        <a class="topImageHide8a" href="{{my.08A_productTopImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Atopimage" target="_blank" title="{{my.08A_productTopImageAlt}}">
+                                                                                                        <a class="topImageHide8a" href="{{my.08A_productTopImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Atopimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.08A_productTopImageAlt}}">
                                                                                                             <img class="topImageHide8a" src="{{my.08A_productTopImageSource}}" alt="{{my.08A_productTopImageAlt}}" border="0" width="200" style="display: ${productTopImageLeftDisplay}">
                                                                                                         </a>
                                                                                                     </div>
@@ -930,7 +920,7 @@
                                                                                             <tr>
                                                                                                 <td align="center" valign="top" class="pb10">
                                                                                                     <div class="mktEditable responsive" id="productHighlightImage" mktoName="Product Highlight Image" mktoImgWidth="200">
-                                                                                                        <a href="{{my.08A_productImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Aimage" target="_blank" title="{{my.08A_productImageAlt}}">
+                                                                                                        <a href="{{my.08A_productImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Aimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.08A_productImageAlt}}">
                                                                                                             <img src="{{my.08A_productImageSource}}" alt="{{my.08A_productImageAlt}}" border="0" width="200">
                                                                                                         </a>
                                                                                                     </div>
@@ -953,7 +943,7 @@
                                                                             <tr>
                                                                                 <td colspan="2" align="left" valign="top" class="a-black" style="font-family:Calibri, SansB semibold,sans-serif; font-size:18px; color:#000000; line-height:18px; font-weight:bold;padding:0px 5px">
                                                                                     <div class="mktEditable" id="productHighlightImageLeftTitle" mktoname="Product Highlight Module Title Text - Product Left">
-                                                                                        <a href="{{my.08A_productTitleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Atitle" target="_blank" title="{{my.08A_productTitle}}" style="color:#000000; text-decoration:none;" class="a-black">{{my.08A_productTitle}}</a>
+                                                                                        <a href="{{my.08A_productTitleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Atitle_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.08A_productTitle}}" style="color:#000000; text-decoration:none;" class="a-black">{{my.08A_productTitle}}</a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
@@ -975,7 +965,7 @@
                                                                             <tr>
                                                                                 <td colspan="2" class="a-red" align="left" valign="middle" style="font-family: Arial, sans-serif; color:#c90300; font-size:16px;line-height:20px;font-weight:bold;padding:5px">
                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="productHighlightImageLeftCTA" mktoname="Product Highlight Module CTA - Product Left">
-                                                                                        <a href="{{my.08A_productCTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Acta" target="_blank" style="color:#c90300; text-decoration:none;line-height:16px;" title="{{my.08A_productCTA}}">{{my.08A_productCTA}}&nbsp;►</a>
+                                                                                        <a href="{{my.08A_productCTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Acta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" style="color:#c90300; text-decoration:none;line-height:16px;" title="{{my.08A_productCTA}}">{{my.08A_productCTA}}&nbsp;►</a>
                                                                                     </div></span>
                                                                                 </td>
                                                                             </tr>
@@ -1021,7 +1011,7 @@
                                                                                             <tr>
                                                                                                 <td align="center" valign="top" class="pb10">
                                                                                                     <div class="mktEditable responsive" id="productHighlightTopImageB" mktoName="Product Highlight Top Image" mktoImgWidth="200">
-                                                                                                        <a href="{{my.08B_productTopImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Btopimage" target="_blank" title="{{my.08B_productTopImageAlt}}">
+                                                                                                        <a href="{{my.08B_productTopImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Btopimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.08B_productTopImageAlt}}">
                                                                                                             <img src="{{my.08B_productTopImageSource}}" alt="{{my.08B_productTopImageAlt}}" border="0" width="200" style="display: ${productTopImageRightDisplay}">
                                                                                                         </a>
                                                                                                     </div>
@@ -1041,7 +1031,7 @@
                                                                                             <tr>
                                                                                                 <td align="center" valign="top" class="pb10">
                                                                                                     <div class="mktEditable responsive" id="productHighlightImageRight" mktoName="Product Highlight Image - Right" mktoImgWidth="200">
-                                                                                                        <a href="{{my.08B_productImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Bimage" target="_blank" title="{{my.08B_productImageAlt}}">
+                                                                                                        <a href="{{my.08B_productImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Bimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.08B_productImageAlt}}">
                                                                                                             <img src="{{my.08B_productImageSource}}" alt="{{my.08B_productImageAlt}}" border="0" width="200" style="display:block;">
                                                                                                         </a>
                                                                                                     </div>
@@ -1069,7 +1059,7 @@
                                                                                             <tr>
                                                                                                 <td colspan="2" align="left" valign="top" class="" style="font-family:Calibri, SansB semibold,sans-serif; font-size:18px; color:#000000; line-height:18px; font-weight:bold;padding:0px 5px">
                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="productHighlightImageRightTitle" mktoname="Product Highlight Module Title Text - Product Right">
-                                                                                                        <a href="{{my.08B_productTitleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Btitle" target="_blank" style="color:#000000; text-decoration:none;" title="{{my.08B_productTitleText}}">{{my.08B_productTitle}}</a>
+                                                                                                        <a href="{{my.08B_productTitleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Btitle_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" style="color:#000000; text-decoration:none;" title="{{my.08B_productTitleText}}">{{my.08B_productTitle}}</a>
                                                                                                     </div></span>
                                                                                                 </td>
                                                                                             </tr>
@@ -1089,7 +1079,7 @@
                                                                                             <tr>
                                                                                                 <td colspan="2" class="a-red" align="left" valign="middle" style="font-family: Arial, sans-serif; color:#db0623; font-size:16px;line-height:20px;font-weight:bold;padding:5px">
                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="productHighlightImageRightCTA" mktoname="Product Highlight Module CTA - Product Right">
-                                                                                                        <a href="{{my.08B_productCTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Bcta" target="_blank" style="color:#c90300; text-decoration:none;line-height:16px;" title="{{my.08B_productCTA}}">{{my.08B_productCTA}}&nbsp;►</a>
+                                                                                                        <a href="{{my.08B_productCTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=productmodule8Bcta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" style="color:#c90300; text-decoration:none;line-height:16px;" title="{{my.08B_productCTA}}">{{my.08B_productCTA}}&nbsp;►</a>
                                                                                                     </div></span>
                                                                                                 </td>
                                                                                             </tr>
@@ -1168,7 +1158,7 @@
                                                             <tr>
                                                                 <td class="a-white" align="center" style="font-family: Arial, sans-serif; font-size:20px; color:#ffffff; line-height: 23px; font-weight: 100;">
                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="blueDividerTextModuleText" mktoname="Blue Divider Text Module Text">
-                                                                        <a class="a-white" title="{{my.10_blueDividerText}}" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/multiple-shipping-addresses?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=bannerimage1">{{my.10_blueDividerText}}</a>
+                                                                        <a class="a-white" title="{{my.10_blueDividerText}}" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/multiple-shipping-addresses?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=bannerimage1_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}">{{my.10_blueDividerText}}</a>
                                                                     </div></span>
                                                                 </td>
                                                             </tr>
@@ -1208,7 +1198,7 @@
                                                                                         <tr style="outline: medium none;">
                                                                                             <td style="-webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
                                                                                                 <div class="mktEditable responsive" id="imageWithListLeftModuleImage" mktoName="Image with List Left Module Image" mktoImgWidth="280">
-                                                                                                    <a href="{{my.11A_topImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2topimage" title="{{my.11A_topImageAlt}}" target="_blank">
+                                                                                                    <a href="{{my.11A_topImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2topimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.11A_topImageAlt}}" target="_blank">
                                                                                                         <img class="responsive" src="{{my.11A_topImageSource}}" style="display:${imageWithListLeftModuleShowTopImage};text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-right-width: 0; outline: none; -ms-interpolation-mode: bicubic; line-height: 100%; max-width: 660px !important; height: auto; width: 100%;"
                                                                                                         alt="{{my.11A_topImageAlt}}" height="auto" width="280">
                                                                                                     </a>
@@ -1229,7 +1219,7 @@
                                                                                         <tr style="outline: medium none;">
                                                                                             <td style="-webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
                                                                                                 <div class="mktEditable responsive" id="imageWithListLeftModuleTopImage" mktoName="Image with List Left Module Top Image" mktoImgWidth="280">
-                                                                                                    <a href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/scheduled-shipments?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured2image" title="{{my.11A_imageAlt}}" target="_blank">
+                                                                                                    <a href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/scheduled-shipments?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured2image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.11A_imageAlt}}" target="_blank">
                                                                                                         <img class="responsive" src="{{my.11A_imageSource}}" style="text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-right-width: 0; outline: none; -ms-interpolation-mode: bicubic; line-height: 100%; max-width: 660px !important; display: block; height: auto; width: 100%;"
                                                                                                         alt="{{my.11A_imageAlt}}" height="auto" width="280">
                                                                                                     </a>
@@ -1266,7 +1256,7 @@
                                                                                 <td class="p-m-20-l primary-font title a-black" style="border-collapse: collapse;color:${imageWithListLeftModuleTextColor};font-family:Calibri, SansB semibold,sans-serif;font-size: 22px;">
                                                                                   <span style="{{my.wordbreak}}">
                                                                                     <div class="mktEditable a-black" id="imageWithListLeftModuleHeadlineText" mktoName="Image with List Left Module Headline Text">
-                                                                                        <a class="a-black" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/scheduled-shipments?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured2title" target="_blank" title="{{my.11A_title}}">
+                                                                                        <a class="a-black" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/scheduled-shipments?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured2title_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.11A_title}}">
                                                                                         <p class="a-black" style="margin:0px;font-weight: bold;">{{my.11A_title}}</p></a>
                                                                                     </div>
                                                                                   </span>
@@ -1303,7 +1293,7 @@
                                                                                                             <tr>
                                                                                                                 <td class="a-white">
                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="imageWithListLeftModuleCTA" mktoName="Image with List Left Module CTA">
-                                                                                                                        <a class="a-white" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/scheduled-shipments?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured2cta" target="_blank" style="font-family: Arial, sans-serif; text-decoration: none;font-size: 16px; color: ${imageWithListLeftModuleCTATextColor}; display: block; word-break: break-all!important;padding: 7px 20px;" title="{{my.11A_CTA}}">
+                                                                                                                        <a class="a-white" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/scheduled-shipments?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured2cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" style="font-family: Arial, sans-serif; text-decoration: none;font-size: 16px; color: ${imageWithListLeftModuleCTATextColor}; display: block; word-break: break-all!important;padding: 7px 20px;" title="{{my.11A_CTA}}">
                                                                                                                             <strong>{{my.11A_CTA}} &raquo;</strong></a>
                                                                                                                     </div>
                                                                                                                     </span>
@@ -1359,7 +1349,7 @@
                                                                                         <tr style="outline: medium none;display:${imageWithListRightModuleShowTopImage}">
                                                                                             <td style="-webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
                                                                                                 <div class="mktEditable responsive" id="imageWithListRightModuleTopImage" mktoName="Image with List Right Module Top Image" mktoImgWidth="280">
-                                                                                                    <a href="{{my.11B_topImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2topimage" title="{{my.11B_TopImageAlt}}" target="_blank">
+                                                                                                    <a href="{{my.11B_topImageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2topimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.11B_TopImageAlt}}" target="_blank">
                                                                                                         <img class="responsive" src="{{my.11B_topImageSource}}" style="display:${imageWithListRightModuleShowTopImage};text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-right-width: 0; outline: none; -ms-interpolation-mode: bicubic; line-height: 100%; max-width: 660px !important;height: auto; width: 100%;"
                                                                                                         alt="{{my.11B_TopImageAlt}}" height="auto" width="280">
                                                                                                     </a>
@@ -1380,7 +1370,7 @@
                                                                                         <tr style="outline: medium none;">
                                                                                             <td style="-webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
                                                                                                 <div class="mktEditable responsive" id="imageWithListRightModuleImage" mktoName="Image with List Right Module Image" mktoImgWidth="280">
-                                                                                                    <a href="{{my.11B_imageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2image" title="{{my.11B_imageAlt}}" target="_blank"><img class="responsive" src="{{my.11B_imageSource}}" style="text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-right-width: 0; outline: none; -ms-interpolation-mode: bicubic; line-height: 100%; max-width: 660px !important; display: block; height: auto; width: 100%;"
+                                                                                                    <a href="{{my.11B_imageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.11B_imageAlt}}" target="_blank"><img class="responsive" src="{{my.11B_imageSource}}" style="text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-right-width: 0; outline: none; -ms-interpolation-mode: bicubic; line-height: 100%; max-width: 660px !important; display: block; height: auto; width: 100%;"
                                                                                                             alt="{{my.11B_imageAlt}}" height="auto" width="280"></a>
                                                                                                 </div>
                                                                                             </td>
@@ -1416,7 +1406,7 @@
                                                                             <tr style="outline: none;">
                                                                             <td class="p-m-20-l primary-font title a-black" style="border-collapse: collapse;color:${imageWithListRightModuleTextColor};font-family:Calibri, SansB semibold,sans-serif;font-size: 22px;">
                                                                               <span style="{{my.wordbreak}}"><div class="mktEditable" id="imageWithListRightModuleHeadlineText" mktoName="Image with List Right Module Headline Text">
-                                                                                    <a class="a-black" href="{{my.11B_CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2title" target="_blank" title="{{my.11B_title}}">
+                                                                                    <a class="a-black" href="{{my.11B_CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2title_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.11B_title}}">
                                                                                         <p class="a-black" style="margin:0px;font-weight: bold;">{{my.11B_title}}</p></a>
                                                                                 </div></span>
                                                                             </td>
@@ -1452,7 +1442,7 @@
                                                                                                             <tr>
                                                                                                                 <td class="a-white">
                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="imageWithListRightModuleCTA" mktoName="Image with List Right Module CTA">
-                                                                                                                        <a class="a-white" href="{{my.11B_CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2cta" title="{{my.11B_CTA}}" target="_blank" style="font-family: Arial, sans-serif; text-decoration: none;font-size: 16px; color: ${imageWithListLeftModuleCTATextColor}; display: block; word-break: break-all!important;padding: 7px 20px;">
+                                                                                                                        <a class="a-white" href="{{my.11B_CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=featured2cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.11B_CTA}}" target="_blank" style="font-family: Arial, sans-serif; text-decoration: none;font-size: 16px; color: ${imageWithListLeftModuleCTATextColor}; display: block; word-break: break-all!important;padding: 7px 20px;">
                                                                                                                             <strong>{{my.11B_CTA}} &raquo;</strong></a>
                                                                                                                     </div></span>
                                                                                                                 </td>
@@ -1526,7 +1516,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                     <div class="mktEditable" id="threeColumnCalloutImage1" mktoName="Three Column Callout - Image 1" mktoImgWidth="50">
-                                                                                                                                                    <a class="" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource1image" title="{{my.12A_column1Headline}}">
+                                                                                                                                                    <a class="" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource1image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column1Headline}}">
                                                                                                                                                         <img class="responsive" src="{{my.12A_column1ImageSource}}" style="max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column1Headline}}" height="auto" width="50">
                                                                                                                                                     </a>      
                                                                                                                                                     </div>
@@ -1552,7 +1542,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; font-size:15px; color:#ffffff;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="threeColumnCalloutText1" mktoname="Three Column Callout - Text 1">
-                                                                                                                                        <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource1title" title="{{my.12A_column1Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px">
+                                                                                                                                        <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource1title_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column1Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px">
                                                                                                                                             {{my.12A_column1Headline}}
                                                                                                                                         </a>
                                                                                                                                         <p class="a-white" style="font-size: 12px;font-weight: normal;color:#ffffff;margin-bottom:0px">{{my.12A_column1Body}}</p>
@@ -1575,7 +1565,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-family: Arial, sans-serif;color:#ffffff;display:${threeColumnCTA1aDisplay}">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="threeColumnCalloutCTA1" mktoname="Three Column Callout - CTA 1">
-                                                                                                                                        <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource1cta" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column1CTA}}">{{my.12A_column1CTA}}</a>
+                                                                                                                                        <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource1cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column1CTA}}">{{my.12A_column1CTA}}</a>
                                                                                                                                     </div>
                                                                                                                                     </span>
                                                                                                                                 </td>
@@ -1625,7 +1615,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                     <div class="mktEditable" id="threeColumnCalloutImage2" mktoName="Three Column Callout - Image 2" mktoImgWidth="50">
-                                                                                                                                                    <a target="_blank" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource2image" title="{{my.12A_column2Headline}}"> 
+                                                                                                                                                    <a target="_blank" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource2image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column2Headline}}"> 
                                                                                                                                                     <img class="responsive" src="{{my.12A_column2ImageSource}}" style=" max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column2Headline}}" height="auto" width="50">
                                                                                                                                                     </a>
                                                                                                                                                     </div>
@@ -1651,7 +1641,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; font-size:15px; color:#ffffff;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="threeColumnCalloutText2" mktoname="Three Column Callout - Text 2">
-                                                                                                                                    <a target="_blank" class="a-white" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource2title" title="{{my.12A_column2Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px">
+                                                                                                                                    <a target="_blank" class="a-white" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource2title_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column2Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px">
                                                                                                                                         {{my.12A_column2Headline}}</a>
                                                                                                                                         <p class="a-white" style="font-size: 12px;font-weight: normal;color:#ffffff;margin-bottom:0px">{{my.12A_column2Body}}</p>
                                                                                                                                     </div>
@@ -1674,7 +1664,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; font-size:16px; color:#ffffff;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="threeColumnCalloutCTA2" mktoname="Three Column Callout - CTA 2">
-                                                                                                                                        <a target="_blank" class="a-white" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource2cta" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column2CTA}}">{{my.12A_column2CTA}}</a>
+                                                                                                                                        <a target="_blank" class="a-white" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource2cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column2CTA}}">{{my.12A_column2CTA}}</a>
                                                                                                                                     </div>
                                                                                                                                     </span>
                                                                                                                                 </td>
@@ -1724,7 +1714,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                     <div class="mktEditable" id="threeColumnCalloutImage3" mktoName="Three Column Callout - Image 3" mktEditableWidth="50">
-                                                                                                                                                    <a target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource3image" title="{{my.12A_column3Headline}}">
+                                                                                                                                                    <a target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource3image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column3Headline}}">
                                                                                                                                                         <img class="responsive" src="{{my.12A_column3ImageSource}}" style=" max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column3Headline}}" height="auto" width="50">
                                                                                                                                                     </a>
                                                                                                                                                     </div>
@@ -1748,7 +1738,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; font-size:15px; color:#ffffff;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="threeColumnCalloutText3" mktoname="Three Column Callout - Text 3">
-                                                                                                                                    <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource3title" title="{{my.12A_column3Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px">
+                                                                                                                                    <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource3title_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column3Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px">
                                                                                                                                         {{my.12A_column3Headline}}</a>
                                                                                                                                         <p class="a-white" style="font-size: 12px;font-weight: normal;color:#ffffff;margin-bottom:0px">{{my.12A_column3Body}}</p>
                                                                                                                                     </div>
@@ -1771,7 +1761,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; color:#ffffff;display:${threeColumnCTA3aDisplay}">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="threeColumnCalloutCTA3" mktoname="Three Column Callout - CTA 3">
-                                                                                                                                        <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource3cta" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column3CTA}}">{{my.12A_column3CTA}}</a>
+                                                                                                                                        <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&utm_source={{my.UTM_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=resource3cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column3CTA}}">{{my.12A_column3CTA}}</a>
                                                                                                                                     </div></span>
                                                                                                                                 </td>
                                                                                                                             </tr>
@@ -1849,7 +1839,7 @@
                                                                                           <tr> 
                                                                                             <td align="center" style="text-align: center;"> 
                                                                                               <div class="mktEditable" id="threeColumnCalloutImage4" mktoname="Three Column Callout - Image 4">
-                                                                                                <a class="" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource4image" title="{{my.12A_column4Headline}}"> <img class="responsive" src="{{my.12A_column4ImageSource}}" style="max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column4Headline}}" height="auto" width="50"> </a>
+                                                                                                <a class="" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource4image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column4Headline}}"> <img class="responsive" src="{{my.12A_column4ImageSource}}" style="max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column4Headline}}" height="auto" width="50"> </a>
                                                                                               </div> </td> 
                                                                                           </tr> 
                                                                                         </tbody> 
@@ -1868,7 +1858,7 @@
                                                                                   <tr> 
                                                                                     <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; font-size:15px; color:#ffffff;"> <span style="{{my.wordbreak}}"> 
                                                                                         <div class="mktEditable a-white" id="threeColumnCalloutText4" mktoname="Three Column Callout - Text 4">
-                                                                                          <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource4title" title="{{my.12A_column4Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px"> {{my.12A_column4Headline}} </a> 
+                                                                                          <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource4title_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column4Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px"> {{my.12A_column4Headline}} </a> 
                                                                                           <p class="a-white" style="font-size: 12px;font-weight: normal;color:#ffffff;margin-bottom:0px">{{my.12A_column4Body}}</p>
                                                                                         </div></span> </td> 
                                                                                   </tr> 
@@ -1885,7 +1875,7 @@
                                                                                   <tr> 
                                                                                     <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-family: Arial, sans-serif;color:#ffffff;"> <span style="{{my.wordbreak}}"> 
                                                                                         <div class="mktEditable" id="threeColumnCalloutCTA4" mktoname="Three Column Callout - CTA 4">
-                                                                                          <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource4cta" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column4CTA}}">{{my.12A_column4CTA}}</a>
+                                                                                          <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/resources/bom-manager?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource4cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column4CTA}}">{{my.12A_column4CTA}}</a>
                                                                                         </div> </span> </td> 
                                                                                   </tr> 
                                                                                 </tbody> 
@@ -1924,7 +1914,7 @@
                                                                                           <tr> 
                                                                                             <td align="center" style="text-align: center;"> 
                                                                                               <div class="mktEditable" id="threeColumnCalloutImage5" mktoname="Three Column Callout - Image 5">
-                                                                                                <a target="_blank" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource5image" title="{{my.12A_column5Headline}}"> <img class="responsive" src="{{my.12A_column5ImageSource}}" style=" max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column5Headline}}" height="auto" width="50"> </a>
+                                                                                                <a target="_blank" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource5image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column5Headline}}"> <img class="responsive" src="{{my.12A_column5ImageSource}}" style=" max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column5Headline}}" height="auto" width="50"> </a>
                                                                                               </div> </td> 
                                                                                           </tr> 
                                                                                         </tbody> 
@@ -1943,7 +1933,7 @@
                                                                                   <tr> 
                                                                                     <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; font-size:15px; color:#ffffff;"> <span style="{{my.wordbreak}}"> 
                                                                                         <div class="mktEditable a-white" id="threeColumnCalloutText5" mktoname="Three Column Callout - Text 5">
-                                                                                          <a target="_blank" class="a-white" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource5title" title="{{my.12A_column5Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px"> {{my.12A_column5Headline}}</a> 
+                                                                                          <a target="_blank" class="a-white" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource5title_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column5Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px"> {{my.12A_column5Headline}}</a> 
                                                                                           <p class="a-white" style="font-size: 12px;font-weight: normal;color:#ffffff;margin-bottom:0px">{{my.12A_column5Body}}</p>
                                                                                         </div> </span> </td> 
                                                                                   </tr> 
@@ -1960,7 +1950,7 @@
                                                                                   <tr> 
                                                                                     <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; font-size:16px; color:#ffffff;"> <span style="{{my.wordbreak}}"> 
                                                                                         <div class="mktEditable a-white" id="threeColumnCalloutCTA5" mktoname="Three Column Callout - CTA 5">
-                                                                                          <a target="_blank" class="a-white" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource5cta" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column5CTA}}">{{my.12A_column5CTA}}</a>
+                                                                                          <a target="_blank" class="a-white" href="https://{{my.0_domainName}}/MyDigiKey/PCN?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource5cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column5CTA}}">{{my.12A_column5CTA}}</a>
                                                                                         </div> </span> </td> 
                                                                                   </tr> 
                                                                                 </tbody> 
@@ -1999,7 +1989,7 @@
                                                                                           <tr> 
                                                                                             <td align="center" style="text-align: center;"> 
                                                                                               <div class="mktEditable" id="threeColumnCalloutImage6" mktoname="Three Column Callout - Image 6" mkteditablewidth="50">
-                                                                                                <a target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource6image" title="{{my.12A_column6Headline}}"> <img class="responsive" src="{{my.12A_column6ImageSource}}" style=" max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column6Headline}}" height="auto" width="50"> </a>
+                                                                                                <a target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource6image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column6Headline}}"> <img class="responsive" src="{{my.12A_column6ImageSource}}" style=" max-width: 50px !important; display: block; height: auto; width: 50px" alt="{{my.12A_column6Headline}}" height="auto" width="50"> </a>
                                                                                               </div> </td> 
                                                                                           </tr> 
                                                                                         </tbody> 
@@ -2018,7 +2008,7 @@
                                                                                   <tr> 
                                                                                     <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; font-size:15px; color:#ffffff;"> <span style="{{my.wordbreak}}"> 
                                                                                         <div class="mktEditable a-white" id="threeColumnCalloutText6" mktoname="Three Column Callout - Text 6">
-                                                                                          <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource6title" title="{{my.12A_column6Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px"> {{my.12A_column6Headline}}</a> 
+                                                                                          <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource6title_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column6Headline}}" style="color:#ffffff;text-decoration:none;margin:0px;margin-bottom:10px;font-size:22px;line-height:28px"> {{my.12A_column6Headline}}</a> 
                                                                                           <p class="a-white" style="font-size: 12px;font-weight: normal;color:#ffffff;margin-bottom:0px">{{my.12A_column6Body}}</p>
                                                                                         </div> </span> </td> 
                                                                                   </tr> 
@@ -2035,7 +2025,7 @@
                                                                                   <tr> 
                                                                                     <td class="a-white" align="center" style="margin:0;line-height:22px;font-weight: bold;font-size: 16px;font-family: Arial, sans-serif; color:#ffffff;"> <span style="{{my.wordbreak}}"> 
                                                                                         <div class="mktEditable a-white" id="threeColumnCalloutCTA6" mktoname="Three Column Callout - CTA 6">
-                                                                                          <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource6cta" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column6CTA}}">{{my.12A_column6CTA}}</a>
+                                                                                          <a class="a-white" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/shared-order-history?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=resource6cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#ffffff;text-decoration: underline;" title="{{my.12A_column6CTA}}">{{my.12A_column6CTA}}</a>
                                                                                         </div></span> </td> 
                                                                                   </tr> 
                                                                                 </tbody> 
@@ -2106,7 +2096,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                     <div class="mktEditable" id="threeColumnProductImage1a" mktoName="Three Column Product - Image 1a" mktEditableWidth="150">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column1CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB1topimage" title="{{my.12A_column1Headline}}">
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column1CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB1topimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12A_column1Headline}}">
                                                                                                                                                         <img class="responsive" src="{{my.12B_column1TopImageSource}}" style="max-width: 150px !important; display: block; height: auto; width: 150px"
                                                                                                                                                             alt="{{my.12B_column1Body}}" height="auto" width="150">
                                                                                                                                                     </a>
@@ -2137,7 +2127,7 @@
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                   <span style="{{my.wordbreak}}">
                                                                                                                                                     <div class="mktEditable" id="threeColumnProductImage1b" mktoName="Three Column Product - Image 1b" mktEditableWidth="175">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column1CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB1image" title="{{my.12B_column1Body}}"><img class="responsive" src="{{my.12B_column1ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column1CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB1image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_column1Body}}"><img class="responsive" src="{{my.12B_column1ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
                                                                                                                                                             alt="{{my.12B_column1Body}}" height="auto" width="175"></a></div></span>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -2180,7 +2170,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-black" align="center" style="margin:0;line-height:22px;font-weight: bold;font-family: Arial, sans-serif;color:#000000;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="threeColumnProductCTA1" mktoname="Three Column Product - CTA 1">
-                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_column1CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB1cta" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_column1CTA}}">{{my.12B_column1CTA}}</a>
+                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_column1CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB1cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_column1CTA}}">{{my.12B_column1CTA}}</a>
                                                                                                                                     </div></span>
                                                                                                                                 </td>
                                                                                                                             </tr>
@@ -2227,7 +2217,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                 <div class="mktEditable" id="threeColumnProductImage2a" mktoName="Three Column Product - Image 2a" mktEditableWidth="125">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column2CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2topimage" title="{{my.12B_column2Body}}">
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column2CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2topimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_column2Body}}">
                                                                                                                                                     <img class="responsive" src="{{my.12B_column2TopImageSource}}" style="max-width: 150px !important; display: block; height: auto; width: 150px"
                                                                                                                                                     alt="{{my.12B_column2Body}}" height="auto" width="150"></a></div>
                                                                                                                                                 </td>
@@ -2255,7 +2245,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                     <div class="mktEditable" id="threeColumnProductImage2b" mktoName="Three Column Product - Image 2b" mktEditableWidth="175">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column2CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2image" title="{{my.12B_column2Body}}"><img class="responsive" src="{{my.12B_column2ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column2CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_column2Body}}"><img class="responsive" src="{{my.12B_column2ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
                                                                                                                                                             alt="{{my.12B_column2Body}}" height="auto" width="175"></a></div>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -2297,7 +2287,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-black" align="center" style="margin:0;line-height:22px;font-weight: bold;font-family: Arial, sans-serif;color:#000000;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="threeColumnProductCTA2" mktoname="Three Column Product - CTA 2">
-                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_column2CTA}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2cta" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_column2CTA}}">{{my.12B_column2CTA}}</a>
+                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_column2CTA}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_column2CTA}}">{{my.12B_column2CTA}}</a>
                                                                                                                                     </div>
                                                                                                                                     </span>
                                                                                                                                 </td>
@@ -2345,7 +2335,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                 <div class="mktEditable" id="threeColumnProductImage3a" mktoName="Three Column Product - Image 3a" mktEditableWidth="125">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column3CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3topimage" title="{{my.12B_column3Body}}"><img class="responsive" src="{{my.12B_column3TopImageSource}}" style="max-width: 150px !important; display: block; height: auto; width: 150px"
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column3CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3topimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_column3Body}}"><img class="responsive" src="{{my.12B_column3TopImageSource}}" style="max-width: 150px !important; display: block; height: auto; width: 150px"
                                                                                                                                                     alt="{{my.12B_column3Body}}" height="auto" width="150"></a></div>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -2371,7 +2361,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="threeColumnProductImage3b" mktoName="Three Column Product - Image 3b" mktEditableWidth="175">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column3CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3image" title="{{my.12B_column3Body}}"><img class="responsive" src="{{my.12B_column3ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column3CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3image_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_column3Body}}"><img class="responsive" src="{{my.12B_column3ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
                                                                                                                                                             alt="{{my.12B_column3Body}}" height="auto" width="175"></a></div></span>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -2413,7 +2403,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-black" align="center" style="margin:0;line-height:22px;font-weight: bold;font-family: Arial, sans-serif;color:#000000;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="threeColumnProductCTA3" mktoname="Three Column Product - CTA 3">
-                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_column3CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3cta" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_column3CTA}}">{{my.12B_column3CTA}}</a>
+                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_column3CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_column3CTA}}">{{my.12B_column3CTA}}</a>
                                                                                                                                     </div></span>
                                                                                                                                 </td>
                                                                                                                             </tr>
@@ -2490,7 +2480,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                     <div class="mktEditable" id="threeColumnProductImage4a" mktoName="Three Column Product - Image 4a" mktEditableWidth="150">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column4CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB4topimage" title="{{my.12B_column4Headline}}">
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column4CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB4topimage&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_column4Headline}}">
                                                                                                                                                         <img class="responsive" src="{{my.12B_column4TopImageSource}}" style="max-width: 150px !important; display: block; height: auto; width: 150px"
                                                                                                                                                             alt="{{my.12B_column4Body}}" height="auto" width="150">
                                                                                                                                                     </a>
@@ -2521,7 +2511,7 @@
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                   <span style="{{my.wordbreak}}">
                                                                                                                                                     <div class="mktEditable" id="threeColumnProductImage4b" mktoName="Three Column Product - Image 4b" mktEditableWidth="175">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column4CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB4image" title="{{my.12B_column4Body}}"><img class="responsive" src="{{my.12B_column4ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column4CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB4image&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_column4Body}}"><img class="responsive" src="{{my.12B_column4ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
                                                                                                                                                             alt="{{my.12B_column4Body}}" height="auto" width="175"></a></div></span>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -2564,7 +2554,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-black" align="center" style="margin:0;line-height:22px;font-weight: bold;font-family: Arial, sans-serif;color:#000000;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="threeColumnProductCTA4" mktoname="Three Column Product - CTA 4">
-                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_column4CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB4cta" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_column4CTA}}">{{my.12B_column4CTA}}</a>
+                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_column4CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB4cta&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_column4CTA}}">{{my.12B_column4CTA}}</a>
                                                                                                                                     </div></span>
                                                                                                                                 </td>
                                                                                                                             </tr>
@@ -2611,7 +2601,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                 <div class="mktEditable" id="threeColumnProductImage5a" mktoName="Three Column Product - Image 5a" mktEditableWidth="125">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_column5CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2topimage" title="{{my.12B_Column5Body}}">
+                                                                                                                                                    <a target="_blank" href="{{my.12B_column5CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2topimage&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_Column5Body}}">
                                                                                                                                                     <img class="responsive" src="{{my.12B_Column5TopImageSource}}" style="max-width: 150px !important; display: block; height: auto; width: 150px"
                                                                                                                                                     alt="{{my.12B_Column5Body}}" height="auto" width="150"></a></div>
                                                                                                                                                 </td>
@@ -2639,7 +2629,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                     <div class="mktEditable" id="threeColumnProductImage5b" mktoName="Three Column Product - Image 5b" mktEditableWidth="175">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_Column5CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2image" title="{{my.12B_Column5Body}}"><img class="responsive" src="{{my.12B_Column5ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
+                                                                                                                                                    <a target="_blank" href="{{my.12B_Column5CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB2image&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_Column5Body}}"><img class="responsive" src="{{my.12B_Column5ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
                                                                                                                                                             alt="{{my.12B_Column5Body}}" height="auto" width="175"></a></div>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -2729,7 +2719,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                 <div class="mktEditable" id="threeColumnProductImage6a" mktoName="Three Column Product - Image 6a" mktEditableWidth="125">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_Column6CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3topimage" title="{{my.12B_Column6Body}}"><img class="responsive" src="{{my.12B_Column6TopImageSource}}" style="max-width: 150px !important; display: block; height: auto; width: 150px"
+                                                                                                                                                    <a target="_blank" href="{{my.12B_Column6CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3topimage&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_Column6Body}}"><img class="responsive" src="{{my.12B_Column6TopImageSource}}" style="max-width: 150px !important; display: block; height: auto; width: 150px"
                                                                                                                                                     alt="{{my.12B_column6Body}}" height="auto" width="150"></a></div>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -2755,7 +2745,7 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="center" style="text-align: center;">
                                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="threeColumnProductImage6b" mktoName="Three Column Product - Image 6b" mktEditableWidth="175">
-                                                                                                                                                    <a target="_blank" href="{{my.12B_Column6CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3image" title="{{my.12B_Column6Body}}"><img class="responsive" src="{{my.12B_Column6ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
+                                                                                                                                                    <a target="_blank" href="{{my.12B_Column6CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3image&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.12B_Column6Body}}"><img class="responsive" src="{{my.12B_Column6ImageSource}}" style="max-width: 175px !important; display: block; height: auto; width: 175px"
                                                                                                                                                             alt="{{my.12B_Column6Body}}" height="auto" width="175"></a></div></span>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -2797,7 +2787,7 @@
                                                                                                                             <tr>
                                                                                                                                 <td class="a-black" align="center" style="margin:0;line-height:22px;font-weight: bold;font-family: Arial, sans-serif;color:#000000;">
                                                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="threeColumnProductCTA6" mktoname="Three Column Product - CTA 6">
-                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_Column6CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3cta" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_Column6CTA}}">{{my.12B_Column6CTA}}</a>
+                                                                                                                                        <a target="_blank" class="a-black" href="{{my.12B_Column6CTAURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=threecolumnB3cta&amp;utm_cid={{lead.WT_v_sub2}}" style="font-size: 12px;font-weight: bold;color:#000000;text-decoration: underline;" title="{{my.12B_Column6CTA}}">{{my.12B_Column6CTA}}</a>
                                                                                                                                     </div></span>
                                                                                                                                 </td>
                                                                                                                             </tr>
@@ -2849,7 +2839,7 @@
                                                                             <tr>
                                                                                 <td align="center">
                                                                                     <div class="mktEditable responsive" id="twoColumnRightImage1" mktoName="Two Column Right Image 1" mktEditableWidth="250">
-                                                                                        <a href="https://{{my.0_domainName}}/{{my.0_language}}/new-products?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured3image" title="{{my.13_headline}}" target="_blank"><img class="responsive" src="{{my.13_imageSource}}" style="max-width: 250px !important;" alt="{{my.13_headline}}" width="250"></a>
+                                                                                        <a href="https://{{my.0_domainName}}/{{my.0_language}}/new-products?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured3image&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.13_headline}}" target="_blank"><img class="responsive" src="{{my.13_imageSource}}" style="max-width: 250px !important;" alt="{{my.13_headline}}" width="250"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
@@ -2863,7 +2853,7 @@
                                                                             <tr style="outline: none;">
                                                                                 <td class="a-black" style="border-collapse: collapse;color:#222222;font-family:Calibri, SansB semibold,sans-serif;font-size: 24px;padding-left: 20px;">
                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable" id="newProductsRightModuleHeader" mktoName="New Products Right Module - Header">
-                                                                                    <a class="a-black" style="font-weight: bold;" href="https://{{my.0_domainName}}/{{my.0_language}}/new-products?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured3title" title="{{my.13_headline}}" target="_blank">{{my.13_headline}}</a></div>
+                                                                                    <a class="a-black" style="font-weight: bold;" href="https://{{my.0_domainName}}/{{my.0_language}}/new-products?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=featured3title&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.13_headline}}" target="_blank">{{my.13_headline}}</a></div>
                                                                                     </span>
                                                                                 </td>
                                                                             </tr>
@@ -2878,10 +2868,10 @@
                                                                                             <tr class="a-red" style="outline: none;">
                                                                                                 <td class="a-red" style="border-collapse: collapse;color:#c90300;font-family:Calibri, SansB semibold,sans-serif;font-size: 15px;padding-left: 20px;">
                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable newProductsRightModuleLinkControl" id="newProductsRightModuleColumn1Text" mktoName="New Products Right Module - Column 1 Text">
-                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/electromechanical/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype1" target="_blank" title="{{my.13_column1Product1}}" class="a-red" style="color: #c90300;">{{my.13_column1Product1}}</a></p>
-                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/{{my.0_language}}/resources/connectors/index?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype2" target="_blank" title="{{my.13_column1Product2}}" class="a-red" style="color: #c90300;">{{my.13_column1Product2}}</a></p>
-                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/{{my.0_language}}/optoelectronics/7?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype3" target="_blank" title="{{my.13_column1Product3}}" class="a-red" style="color: #c90300;">{{my.13_column1Product3}}</a></p>
-                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/passives/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype4" target="_blank" title="{{my.13_column1Product4}}" class="a-red" style="color: #c90300;">{{my.13_column1Product4}}</a></p>
+                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/electromechanical/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype1&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column1Product1}}" class="a-red" style="color: #c90300;">{{my.13_column1Product1}}</a></p>
+                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/{{my.0_language}}/resources/connectors/index?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype2&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column1Product2}}" class="a-red" style="color: #c90300;">{{my.13_column1Product2}}</a></p>
+                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/{{my.0_language}}/optoelectronics/7?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype3&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column1Product3}}" class="a-red" style="color: #c90300;">{{my.13_column1Product3}}</a></p>
+                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/passives/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype4&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column1Product4}}" class="a-red" style="color: #c90300;">{{my.13_column1Product4}}</a></p>
                                                                                                     </div>
                                                                                                     </span>
                                                                                                 </td>
@@ -2893,10 +2883,10 @@
                                                                                             <tr class="a-red" style="outline: none;">
                                                                                                 <td class="a-red" style="border-collapse: collapse;color:#c90300;font-family:Calibri, SansB semibold,sans-serif;font-size: 15px;padding-left: 20px;">
                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable newProductsRightModuleLinkControl" id="newProductsRightModuleColumn2Text" mktoName="New Products Module Right - Column 2 Text">
-                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/rf-wireless/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype5" target="_blank" title="{{my.13_column2Product1}}" class="a-red" style="color: #c90300;">{{my.13_column2Product1}}</a></p>
-                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/semiconductors/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype6" target="_blank" title="{{my.13_column2Product2}}" class="a-red" style="color: #c90300;">{{my.13_column2Product2}}</a></p>
-                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/{{my.0_language}}/sensors-transducers/25?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype7" target="_blank" title="{{my.13_column2Product3}}" class="a-red" style="color: #c90300;">{{my.13_column2Product3}}</a></p>
-                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/thermal-management/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype8" target="_blank" title="{{my.13_column2Product4}}" class="a-red" style="color: #c90300;">{{my.13_column2Product4}}</a></p>
+                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/rf-wireless/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype5&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column2Product1}}" class="a-red" style="color: #c90300;">{{my.13_column2Product1}}</a></p>
+                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/semiconductors/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype6&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column2Product2}}" class="a-red" style="color: #c90300;">{{my.13_column2Product2}}</a></p>
+                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/{{my.0_language}}/sensors-transducers/25?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype7&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column2Product3}}" class="a-red" style="color: #c90300;">{{my.13_column2Product3}}</a></p>
+                                                                                                    <p class="a-red" style="margin-top: 0px auto; color: #c90300;"><a href="https://{{my.0_domainName}}/products/thermal-management/{{my.0_language}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.UTM_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype8&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column2Product4}}" class="a-red" style="color: #c90300;">{{my.13_column2Product4}}</a></p>
                                                                                                     </div></span>
                                                                                                 </td>
                                                                                             </tr>
@@ -2936,7 +2926,7 @@
                                                                             <tr>
                                                                                 <td align="center">
                                                                                     <div class="mktEditable responsive" id="twoColumnLeftImage1" mktoName="Two Column Left Image 1" mktEditableWidth="250">
-                                                                                        <a href="{{my.13_imageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=newproductsbimage_{{my.0_country_url}}" title="{{my.13_headline}}" target="_blank"><img class="responsive" src="{{my.13_imageSource}}" style="max-width: 250px !important;" alt="{{my.13_headline}}" width="250"></a>
+                                                                                        <a href="{{my.13_imageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=newproductsbimage_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.13_headline}}" target="_blank"><img class="responsive" src="{{my.13_imageSource}}" style="max-width: 250px !important;" alt="{{my.13_headline}}" width="250"></a>
                                                                                     </div>
                                                                                 </td>
                                                                             </tr>
@@ -2950,7 +2940,7 @@
                                                                             <tr style="outline: none;">
                                                                             <td class="a-black" style="border-collapse: collapse;color:#222222;font-family:Calibri, SansB semibold,sans-serif;font-size: 24px;padding-left: 20px;">
                                                                               <span style="{{my.wordbreak}}"><div class="mktEditable" id="newProductsLeftModuleHeader" mktoName="New Products Left Module - Header">
-                                                                                    <a class="a-black" style="font-weight: bold;" href="{{my.13_imageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=newproductsbheadline_{{my.0_country_url}}" title="{{my.13_headline}}" target="_blank">{{my.13_headline}}</a></div>
+                                                                                    <a class="a-black" style="font-weight: bold;" href="{{my.13_imageURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=newproductsbheadline_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" title="{{my.13_headline}}" target="_blank">{{my.13_headline}}</a></div>
                                                                                 </span>
                                                                                   </td>
                                                                         </tr>
@@ -2966,10 +2956,10 @@
                                                                                             <tr style="outline: none;">
                                                                                                 <td class="a-red" style="border-collapse: collapse;color:#c90300;font-family:Calibri, SansB semibold,sans-serif;font-size: 15px;padding-left: 20px;">
                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable newProductsLeftModuleLinkControl" id="newProductsLeftModuleColumn1Text" mktoName="New Products Left Module - Column 1 Text">
-                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column1Product1URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype1" target="_blank" title="{{my.13_column1Product1}}" class="a-red" style="color:#c90300">{{my.13_column1Product1}}</a></p>
-                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column1Product2URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype2" target="_blank" title="{{my.13_column1Product2}}" class="a-red" style="color:#c90300">{{my.13_column1Product2}}</a></p>
-                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column1Product3URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype3" target="_blank" title="{{my.13_column1Product3}}" class="a-red" style="color:#c90300">{{my.13_column1Product3}}</a></p>
-                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column1Product4URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype4" target="_blank" title="{{my.13_column1Product4}}" class="a-red" style="color:#c90300">{{my.13_column1Product4}}</a></p>
+                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column1Product1URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype1_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column1Product1}}" class="a-red" style="color:#c90300">{{my.13_column1Product1}}</a></p>
+                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column1Product2URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype2_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column1Product2}}" class="a-red" style="color:#c90300">{{my.13_column1Product2}}</a></p>
+                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column1Product3URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype3_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column1Product3}}" class="a-red" style="color:#c90300">{{my.13_column1Product3}}</a></p>
+                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column1Product4URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype4_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column1Product4}}" class="a-red" style="color:#c90300">{{my.13_column1Product4}}</a></p>
                                                                                                     </div></span>
                                                                                                 </td>
                                                                                             </tr>
@@ -2980,10 +2970,10 @@
                                                                                             <tr class="a-red"  style="outline: none;">
                                                                                                 <td class="a-red" style="border-collapse: collapse;color:#c90300;font-family:Calibri, SansB semibold,sans-serif;font-size: 15px;padding-left: 20px;">
                                                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable newProductsLeftModuleLinkControl" id="newProductsLeftModuleColumn2Text" mktoName="New Products Left Module - Column 2 Text">
-                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column2Product1URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype5" target="_blank" title="{{my.13_column2Product1}}" class="a-red" style="color:#c90300">{{my.13_column2Product1}}</a></p>
-                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column2Product2URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype6" target="_blank" title="{{my.13_column2Product2}}" class="a-red" style="color:#c90300">{{my.13_column2Product2}}</a></p>
-                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column2Product3URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype7" target="_blank" title="{{my.13_column2Product3}}" class="a-red" style="color:#c90300">{{my.13_column2Product3}}</a></p>
-                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column2Product4URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype8" target="_blank" title="{{my.13_column2Product4}}" class="a-red" style="color:#c90300">{{my.13_column2Product4}}</a> </p>
+                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column2Product1URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype5_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column2Product1}}" class="a-red" style="color:#c90300">{{my.13_column2Product1}}</a></p>
+                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column2Product2URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype6_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column2Product2}}" class="a-red" style="color:#c90300">{{my.13_column2Product2}}</a></p>
+                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column2Product3URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype7_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column2Product3}}" class="a-red" style="color:#c90300">{{my.13_column2Product3}}</a></p>
+                                                                                                        <p class="a-red" style="margin-top: 0px auto;color:#c90300"><a href="{{my.13_column2Product4URL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=producttype8_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" title="{{my.13_column2Product4}}" class="a-red" style="color:#c90300">{{my.13_column2Product4}}</a> </p>
                                                                                                     </div></span>
                                                                                                 </td>
                                                                                             </tr>
@@ -3047,7 +3037,7 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td width="{{my.0_emailsignupwidth}}" class="wrapper" align="center" style="font-family: Arial, sans-serif; font-size:14px; line-height:20px; color:#8a8888; text-transform: uppercase; letter-spacing: 3px; vertical-align: top; width: {{my.0_emailsignupwidth}};">
-                                                                                                  <span style="{{my.wordbreak}}"><a href="https://{{my.0_domainname}}/{{my.0_language}}/resources/dmem/subscription-center?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=emailsignup"
+                                                                                                  <span style="{{my.wordbreak}}"><a href="https://{{my.0_domainname}}/{{my.0_language}}/resources/dmem/subscription-center?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=emailsignup_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
                                                                                                         title="{{my.0_emailsignup}}" target="_blank" style="font-family: Arial, sans-serif; font-size:14px; line-height: 20px; color:#8a8888; text-transform: uppercase; letter-spacing: 3px; width:235px; text-decoration: none;"><strong>{{my.0_emailsignup}}</strong> </a></span>
                                                                                                 </td>
                                                                                             </tr>
@@ -3057,9 +3047,9 @@
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td width="20" height="20" align="center">
-                                                                                                  <span style="{{my.wordbreak}}"><a href="https://{{my.0_domainname}}/{{my.0_language}}/resources/dmem/subscription-center?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=emailsignup"
+                                                                                                  <span style="{{my.wordbreak}}"><a href="https://{{my.0_domainname}}/{{my.0_language}}/resources/dmem/subscription-center?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=emailsignup_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
                                                                                                         title="{{my.0_emailsignup}}" target="_blank" style="font-family: Arial, sans-serif; font-size:18px; line-height: 20px; color:#8a8888; text-transform: uppercase; letter-spacing: 3px; width:235px; text-decoration: none;">
-                                                                                                        <img src="https://na-ab33.marketo.com/rs/digikey/images/envelope_gray.png" width="20" alt="{{my.0_emailsignup}}"></a></span>
+                                                                                                        <img src="https://info.digikey.com/rs/digikey/images/envelope_gray.png" width="20" alt="{{my.0_emailsignup}}"></a></span>
                                                                                                 </td>
                                                                                             </tr>
                                                                                         </tbody>
@@ -3103,13 +3093,13 @@
                                                                                                                             <tr>
                                                                                                                                 <td align="left" valign="top">
                                                                                                                                     <div class="mktEditable" id="FooterAppImage1" mktoName="App Image 1" target="_blank" mktolockimgsize="true">
-                                                                                                                                      <a href="https://play.google.com/store/apps/details?id=com.digikey.mobile&amp;hl=en" title="Google Play" target="_blank"><img style="display:block;" src="https://na-ab33.marketo.com/rs/digikey/images/google_play.png" width="69" border="0" alt="Google Play"></a>
+                                                                                                                                      <a href="https://play.google.com/store/apps/details?id=com.digikey.mobile&amp;hl=en" title="Google Play" target="_blank"><img style="display:block;" src="https://info.digikey.com/rs/digikey/images/google_play.png" width="69" border="0" alt="Google Play"></a>
                                                                                                                                     </div>
                                                                                                                                 </td>
 
                                                                                                                                 <td align="left" valign="top">
                                                                                                                                     <div class="mktEditable" id="FooterAppImage2" mktoName="App Image 2" target="_blank" mktolockimgsize="true">
-                                                                                                                                      <a href="https://itunes.apple.com/us/app/digi-key/id352075219?mt=8" title="App Store" target="_blank"><img style="display:block;" src="https://na-ab33.marketo.com/rs/digikey/images/app-store.png" width="79" border="0" alt="App Store"></a>
+                                                                                                                                      <a href="https://itunes.apple.com/us/app/digi-key/id352075219?mt=8" title="App Store" target="_blank"><img style="display:block;" src="https://info.digikey.com/rs/digikey/images/app-store.png" width="79" border="0" alt="App Store"></a>
                                                                                                                                     </div>
                                                                                                                                 </td>
                                                                                                                             </tr>
@@ -3139,23 +3129,23 @@
                                                                                             <tr> 
                                                                                               <td width="20" valign="top" align="center"> 
                                                                                                 <div class="mktEditable" id="FooterASocial1" mktoname="Social 1" target="_blank">
-                                                                                                  <a href="https://www.linkedin.com/company/digikey" target="_blank" title="linkedin"><img style="display: block; max-width: 20px;" src="https://na-ab33.marketo.com/rs/digikey/images/linkedin-35.png" alt="LinkedIn" width="20" border="0"> </a>
+                                                                                                  <a href="https://www.linkedin.com/company/digikey" target="_blank" title="linkedin"><img style="display: block; max-width: 20px;" src="https://info.digikey.com/rs/digikey/images/linkedin-35.png" alt="LinkedIn" width="20" border="0"> </a>
                                                                                                 </div> </td> 
                                                                                               <td width="20" valign="top" align="center"> 
                                                                                                 <div class="mktEditable" id="FooterASocial2" mktoname="Social 2" target="_blank">
-                                                                                                  <a href="https://www.facebook.com/digikey.electronics/" target="_blank" title="facebook"> <img style="display: block; max-width: 20px;" src="https://na-ab33.marketo.com/rs/digikey/images/facebook-35.png" alt="Facebook" width="20" border="0"> </a>
+                                                                                                  <a href="https://www.facebook.com/digikey.electronics/" target="_blank" title="facebook"> <img style="display: block; max-width: 20px;" src="https://info.digikey.com/rs/digikey/images/facebook-35.png" alt="Facebook" width="20" border="0"> </a>
                                                                                                 </div> </td> 
                                                                                               <td width="20" valign="top" align="center"> 
                                                                                                 <div class="mktEditable" id="FooterASocial3" mktoname="Social 3" target="_blank">
-                                                                                                  <a href="https://twitter.com/digikey" target="_blank" title="twitter"> <img style="display: block; max-width: 20px;" src="https://na-ab33.marketo.com/rs/digikey/images/twitter-35.png" alt="Twitter" width="20" border="0"> </a>
+                                                                                                  <a href="https://twitter.com/digikey" target="_blank" title="twitter"> <img style="display: block; max-width: 20px;" src="https://info.digikey.com/rs/digikey/images/twitter-35.png" alt="Twitter" width="20" border="0"> </a>
                                                                                                 </div> </td> 
                                                                                               <td width="22" valign="top" align="center"> 
                                                                                                 <div class="mktEditable" id="FooterASocial4" mktoname="Social 4" target="_blank">
-                                                                                                  <a href="https://www.youtube.com/user/digikey" target="_blank" title="youtube"> <img style="display: block; max-width: 22px;" src="https://na-ab33.marketo.com/rs/digikey/images/youtube-35.png" alt="YouTube" width="22" border="0"> </a>
+                                                                                                  <a href="https://www.youtube.com/user/digikey" target="_blank" title="youtube"> <img style="display: block; max-width: 22px;" src="https://info.digikey.com/rs/digikey/images/youtube-35.png" alt="YouTube" width="22" border="0"> </a>
                                                                                                 </div> </td> 
                                                                                               <td width="21" valign="top" align="center"> 
                                                                                                 <div class="mktEditable" id="FooterASocial5" mktoname="Social 5" target="_blank">
-                                                                                                  <a href="https://www.instagram.com/digikey" target="_blank" title="instagram"> <img style="display: block; max-width: 21px;" src="https://na-ab33.marketo.com/rs/digikey/images/instagram-35.png" alt="Instagram" width="21" border="0"> </a>
+                                                                                                  <a href="https://www.instagram.com/digikey" target="_blank" title="instagram"> <img style="display: block; max-width: 21px;" src="https://info.digikey.com/rs/digikey/images/instagram-35.png" alt="Instagram" width="21" border="0"> </a>
                                                                                                 </div> </td> 
                                                                                             </tr>
                                                                                         </tbody>
@@ -3199,7 +3189,7 @@
                                             <tr class="footerOptOut" style="display: ${showFooterOptOut};">
                                             <td class="copyright linkcontrol2 footerOptOut" align="center" style="font-family: Arial, sans-serif; font-size:10px; line-height:14px; color:#5a5a5a;display:${showFooterOptOut}">
                                             <span style="{{my.wordbreak}}" class="linkControl2 footerOptOut">{{my.8_optout}}
-                                            <a class="mktNotrack linkcontrol2 footerOptOut" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;display: ${showFooterOptOut};" 
+                                            <a class="mktNotrack linkcontrol2 footerOptOut" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;utm_cid={{lead.WT_v_sub2}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;display: ${showFooterOptOut};" 
                 target="_blank" title="{{my.0_clickhere}}">{{my.0_clickhere}}</a>{{my.8_optout1}}</span>
                                                 </td>
                                             </tr>
@@ -3249,13 +3239,13 @@
                                                                                                                                             <tr>
                                                                                                                                                 <td align="left" valign="top">
                                                                                                                                                     <div class="mktEditable" id="FooterAppBImage1" mktoName="App Image 1" target="_blank" mktolockimgsize="true">
-                                                                                                                                                      <a href="https://play.google.com/store/apps/details?id=com.digikey.mobile&amp;hl=en" title="Google Play" target="_blank"><img style="display:block;" src="https://na-ab33.marketo.com/rs/digikey/images/google_play.png" width="69" border="0" alt="Google Play"></a>
+                                                                                                                                                      <a href="https://play.google.com/store/apps/details?id=com.digikey.mobile&amp;hl=en" title="Google Play" target="_blank"><img style="display:block;" src="https://info.digikey.com/rs/digikey/images/google_play.png" width="69" border="0" alt="Google Play"></a>
                                                                                                                                                     </div>
                                                                                                                                                 </td>
 
                                                                                                                                                 <td align="left" valign="top">
                                                                                                                                                     <div class="mktEditable" id="FooterAppBImage2" mktoName="App Image 2" target="_blank" mktolockimgsize="true">
-                                                                                                                                                      <a href="https://itunes.apple.com/us/app/digi-key/id352075219?mt=8" title="App Store" target="_blank"><img style="display:block;" src="https://na-ab33.marketo.com/rs/digikey/images/app-store.png" width="79" border="0" alt="App Store"></a>
+                                                                                                                                                      <a href="https://itunes.apple.com/us/app/digi-key/id352075219?mt=8" title="App Store" target="_blank"><img style="display:block;" src="https://info.digikey.com/rs/digikey/images/app-store.png" width="79" border="0" alt="App Store"></a>
                                                                                                                                                     </div>
                                                                                                                                                 </td>
                                                                                                                                             </tr>
@@ -3285,23 +3275,23 @@
                                                                                                             <tr> 
                                                                                                               <td width="20" valign="top" align="center"> 
                                                                                                                 <div class="mktEditable" id="FooterBSocial1" mktoname="Social 1" target="_blank">
-                                                                                                                  <a href="https://www.linkedin.com/company/digikey" target="_blank" title="linkedin"><img style="display: block; max-width: 20px;" src="https://na-ab33.marketo.com/rs/digikey/images/linkedin-35.png" alt="LinkedIn" width="20" border="0"> </a>
+                                                                                                                  <a href="https://www.linkedin.com/company/digikey" target="_blank" title="linkedin"><img style="display: block; max-width: 20px;" src="https://info.digikey.com/rs/digikey/images/linkedin-35.png" alt="LinkedIn" width="20" border="0"> </a>
                                                                                                                 </div> </td> 
                                                                                                               <td width="20" valign="top" align="center"> 
                                                                                                                 <div class="mktEditable" id="FooterBSocial2" mktoname="Social 2" target="_blank">
-                                                                                                                  <a href="https://www.facebook.com/digikey.electronics/" target="_blank" title="facebook"> <img style="display: block; max-width: 20px;" src="https://na-ab33.marketo.com/rs/digikey/images/facebook-35.png" alt="Facebook" width="20" border="0"> </a>
+                                                                                                                  <a href="https://www.facebook.com/digikey.electronics/" target="_blank" title="facebook"> <img style="display: block; max-width: 20px;" src="https://info.digikey.com/rs/digikey/images/facebook-35.png" alt="Facebook" width="20" border="0"> </a>
                                                                                                                 </div> </td> 
                                                                                                               <td width="20" valign="top" align="center"> 
                                                                                                                 <div class="mktEditable" id="FooterBSocial3" mktoname="Social 3" target="_blank">
-                                                                                                                  <a href="https://twitter.com/digikey" target="_blank" title="twitter"> <img style="display: block; max-width: 20px;" src="https://na-ab33.marketo.com/rs/digikey/images/twitter-35.png" alt="Twitter" width="20" border="0"> </a>
+                                                                                                                  <a href="https://twitter.com/digikey" target="_blank" title="twitter"> <img style="display: block; max-width: 20px;" src="https://info.digikey.com/rs/digikey/images/twitter-35.png" alt="Twitter" width="20" border="0"> </a>
                                                                                                                 </div> </td> 
                                                                                                               <td width="22" valign="top" align="center"> 
                                                                                                                 <div class="mktEditable" id="FooterBSocial4" mktoname="Social 4" target="_blank">
-                                                                                                                  <a href="https://www.youtube.com/user/digikey" target="_blank" title="youtube"> <img style="display: block; max-width: 22px;" src="https://na-ab33.marketo.com/rs/digikey/images/youtube-35.png" alt="YouTube" width="22" border="0"> </a>
+                                                                                                                  <a href="https://www.youtube.com/user/digikey" target="_blank" title="youtube"> <img style="display: block; max-width: 22px;" src="https://info.digikey.com/rs/digikey/images/youtube-35.png" alt="YouTube" width="22" border="0"> </a>
                                                                                                                 </div> </td> 
                                                                                                               <td width="21" valign="top" align="center"> 
                                                                                                                 <div class="mktEditable" id="FooterBSocial5" mktoname="Social 5" target="_blank">
-                                                                                                                  <a href="https://www.instagram.com/digikey" target="_blank" title="instagram"> <img style="display: block; max-width: 21px;" src="https://na-ab33.marketo.com/rs/digikey/images/instagram-35.png" alt="Instagram" width="21" border="0"> </a>
+                                                                                                                  <a href="https://www.instagram.com/digikey" target="_blank" title="instagram"> <img style="display: block; max-width: 21px;" src="https://info.digikey.com/rs/digikey/images/instagram-35.png" alt="Instagram" width="21" border="0"> </a>
                                                                                                                 </div> </td> 
                                                                                                             </tr>
                                                                                                         </tbody>
@@ -3318,7 +3308,7 @@
                                                                             <tr class="footerOptOut" style="display: ${showFooterOptOut};">
                                                                             <td class="linkcontrol2 copyright footerOptOut" align="center" style="font-family: Arial, sans-serif; font-size:10px; line-height:14px; color:#5a5a5a;display:${showFooterOptOut}">
                                                                                 <span style="{{my.wordbreak}}" class="linkControl2 footerOptOut">{{my.8_optout}}
-                                                                                <a class="linkcontrol2 mktNotrack footerOptOut" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;display: ${showFooterOptOut};" 
+                                                                                <a class="linkcontrol2 mktNotrack footerOptOut" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;utm_cid={{lead.WT_v_sub2}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;display: ${showFooterOptOut};" 
                                                 target="_blank" title="{{my.0_clickhere}}">{{my.0_clickhere}}</a>{{my.8_optout1}}</span>
                                                                                 </td>
                                                                             </tr>
@@ -3390,7 +3380,7 @@
                                                                                 <td class="a-white">
                                                                                     <span style="{{my.wordbreak}}">
                                                                                         <div class="mktEditable a-white" id="singleCTAModuleCTA" mktoName="Single CTA Module CTA">
-                                                                                            <a href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta" target="_blank" style="font-family: Arial, sans-serif; text-decoration: none;font-size: 16px; color: ${singleCTAModuleTextColor}; display: block; word-break: break-all!important;padding: 7px 20px;">
+                                                                                            <a href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" style="font-family: Arial, sans-serif; text-decoration: none;font-size: 16px; color: ${singleCTAModuleTextColor}; display: block; word-break: break-all!important;padding: 7px 20px;">
                                                                                                 <strong>{{my.18_singleCTAModuleText}}</strong>
                                                                                             </a>
                                                                                         </div>
@@ -3409,14 +3399,11 @@
                                     </table>
                                 </td>
                             </tr>
-
                            
-                            
-                            
-							<!-- 19. Headline Text Module -->
+							              <!-- 19. Headline Text Module -->
                             <tr class="mktoModule" id="headlineTextModule" mktoname="19. Headline Text Module" mktoAddByDefault="false">
                                 <td>
-                                    <table class="wrapper SecondaryTextWrapper" width="660" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                                    <table class="wrapper SecondaryTextWrapper" width="660" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#F8F8F8">
                                         <tbody>
                                             <tr>
                                                 <td height="10px" style="font-size: 10px; line-height: 10px">&nbsp;</td>
@@ -3428,7 +3415,9 @@
                                                             <tr>
                                                                 <td style="font-family: Arial, Helvetica, sans-serif; font-size:20px; color:#000000; line-height: 28px;text-align: ${headlineTextModuleTextAlign};" class="wrapper">
                                                                     <div class="mktoText" id="headlineText" mktoname="Headline Text">
-                                                                        <strong>{{my.19_headlineText}}</strong>
+                                                                        <a href="https://{{my.0_domainname}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=search_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
+                                                                        style="text-decoration: none !important; color: #000000 !important;"
+                                                                        target="_blank" class="linkControl3" title="{{my.19_headlineText}}">{{my.19_headlineText}}</a>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -3507,12 +3496,12 @@
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td align="center" width="80">
-                                                                                    <a href="{{my.21_productDetailUrl}}" target="_blank">
+                                                                                    <a href="{{my.21_productDetailUrl}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank">
                                                                                         <img src="{{my.21_productImageUrl}}" width="80">
                                                                                     </a>
                                                                                 </td>
                                                                                 <td style="padding-left:10px; font-family:arial, sans-serif; font-size:12px; color:#000000;">
-                                                                                    <a href="{{my.21_productDetailUrl}}" style="text-decoration: underline; color: #000000;" target="_blank">{{my.21_manufacturerPartNumber}}</a>
+                                                                                    <a href="{{my.21_productDetailUrl}}&amp;utm_cid={{lead.WT_v_sub2}}" style="text-decoration: underline; color: #000000;" target="_blank">{{my.21_manufacturerPartNumber}}</a>
                                                                                     <br>{{my.21_digikeyPartNumber}}<br>
                                                                                     <strong>{{my.21_productDescription}}</strong></td>
                                                                             </tr>
