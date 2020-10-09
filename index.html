@@ -3374,25 +3374,31 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td class="active textcenter" style="font-family: Arial, sans-serif; font-size: 16px; mso-padding-alt: 7px 20px; color: ${singleCTAModuleTextColor}; border: 2px solid ${singleCTAModuleBorderColor}; background-color:${singleCTAModuleBackgroundColor};border-radius:5px;line-height:25px;" bgcolor="${singleCTAModuleBackgroundColor}" align="${singleCTAModuleAlignment}">
-                                                                    <table border="0" cellspacing="0" cellpadding="0" align="${singleCTAModuleAlignment}">
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td class="a-white">
-                                                                                    <span style="{{my.wordbreak}}">
-                                                                                        <div class="mktEditable a-white" id="singleCTAModuleCTA" mktoName="Single CTA Module CTA">
-                                                                                            <a href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" target="_blank" style="font-family: Arial, sans-serif; text-decoration: none;font-size: 16px; color: ${singleCTAModuleTextColor}; display: block; word-break: break-all!important;padding: 7px 20px;">
-                                                                                                <strong>{{my.18_singleCTAModuleText}}</strong>
-                                                                                            </a>
-                                                                                        </div>
-                                                                                    </span>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </tbody>
+                                                                   
+                                                                    <table border="0" cellspacing="0" cellpadding="0" align="${singleCTAModuleAlignment}"> 
+                                                                        <tbody> 
+                                                                          <tr> 
+                                                                            <td class="a-white"> 
+                                                                                <span style="{{my.wordbreak}}">
+                                                                                    <div class="mktEditable a-white" id="singleCTAModuleCTA" mktoName="Single CTA Module CTA"> 
+                                                                                        <!--[if mso]>
+                                                                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="height:36px;v-text-anchor:middle;width:${singleCTAModuleWidth};" arcsize="3%" strokecolor="${singleCTAModuleBackgroundColor}" fillcolor="${singleCTAModuleBackgroundColor}">
+                                                                                                <w:anchorlock/>
+                                                                                                <center style="color:${singleCTAModuleTextColor};font-family:Helvetica, Arial,sans-serif;font-size:16px;">{{my.18_singleCTAModuleText}}</center>
+                                                                                            </v:roundrect>
+                                                                                        <![endif]--> 
+                                                                                        <a href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="background-color:${singleCTAModuleBackgroundColor};border:1px solid ${singleCTAModuleBackgroundColor};border-radius:2px;color:${singleCTAModuleTextColor};display:inline-block;font-family:sans-serif;font-size:16px;line-height:44px;text-align:center;text-decoration:none;width:${singleCTAModuleWidth};-webkit-text-size-adjust:none;mso-hide:all;"><strong>{{my.18_singleCTAModuleText}}</strong></a> 
+                                                                                    </div>
+                                                                                </span>
+                                                                            </td> 
+                                                                          </tr> 
+                                                                        </tbody> 
                                                                     </table>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
+                                                    
                                                 </td>
                                             </tr>
                                         </tbody>
