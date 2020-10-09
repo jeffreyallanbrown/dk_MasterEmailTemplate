@@ -146,9 +146,13 @@
             
         }
 
-        .linkControlNoUnderline {
-          text-decoration: none !important;
+        .linkControl4,
+        .linkControl4 a {
+            color: #000000 !important;
+            text-decoration: none !important;
         }
+
+
         
         .force_wrap {
             overflow-wrap: break-word !important;
@@ -1158,7 +1162,7 @@
                                                             <tr>
                                                                 <td class="a-white" align="center" style="font-family: Arial, sans-serif; font-size:20px; color:#ffffff; line-height: 23px; font-weight: 100;">
                                                                   <span style="{{my.wordbreak}}"><div class="mktEditable a-white" id="blueDividerTextModuleText" mktoname="Blue Divider Text Module Text">
-                                                                        <a class="a-white" title="{{my.10_blueDividerText}}" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/multiple-shipping-addresses?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=bannerimage1_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}">{{my.10_blueDividerText}}</a>
+                                                                        <a class="a-white" title="{{my.10_blueDividerText}}" target="_blank" href="https://{{my.0_domainName}}/{{my.0_language}}/help/features-updates/multiple-shipping-addresses?utm_medium={{my.utm_medium}}&utm_source={{my.utm_source}}&utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&utm_content=banner1heading_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}">{{my.10_blueDividerText}}</a>
                                                                     </div></span>
                                                                 </td>
                                                             </tr>
@@ -3186,11 +3190,14 @@
                                             <tr>
                                                 <td height="5" style="line-height: 5px;font-size: 5px;">&nbsp;</td>
                                             </tr>
-                                            <tr class="footerOptOut" style="display: ${showFooterOptOut};">
-                                            <td class="copyright linkcontrol2 footerOptOut" align="center" style="font-family: Arial, sans-serif; font-size:10px; line-height:14px; color:#5a5a5a;display:${showFooterOptOut}">
-                                            <span style="{{my.wordbreak}}" class="linkControl2 footerOptOut">{{my.8_optout}}
-                                            <a class="mktNotrack linkcontrol2 footerOptOut" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;utm_cid={{lead.WT_v_sub2}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;display: ${showFooterOptOut};" 
-                target="_blank" title="{{my.0_clickhere}}">{{my.0_clickhere}}</a>{{my.8_optout1}}</span>
+                                            <tr class="footerOptOut" style="${showFooterOptOut};">
+                                                <td class="linkcontrol2" align="center" style="font-family: Arial, sans-serif; font-size:10px; line-height:14px; color:#5a5a5a;display:${showFooterOptOut}">
+                                                    <span style="{{my.wordbreak}}" class="linkControl2">{{my.8_optout}}
+                                                        <a class="linkcontrol2" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;utm_cid={{lead.WT_v_sub2}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;" target="_blank" title="{{my.0_clickhere}}">
+                                                            {{my.0_clickhere}}
+                                                        </a>
+                                                        {{my.8_optout1}}
+                                                    </span>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -3308,7 +3315,7 @@
                                                                             <tr class="footerOptOut" style="display: ${showFooterOptOut};">
                                                                             <td class="linkcontrol2 copyright footerOptOut" align="center" style="font-family: Arial, sans-serif; font-size:10px; line-height:14px; color:#5a5a5a;display:${showFooterOptOut}">
                                                                                 <span style="{{my.wordbreak}}" class="linkControl2 footerOptOut">{{my.8_optout}}
-                                                                                <a class="linkcontrol2 mktNotrack footerOptOut" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;utm_cid={{lead.WT_v_sub2}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;${showFooterOptOut};" 
+                                                                                <a class="mktNotrack linkcontrol2" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;utm_cid={{lead.WT_v_sub2}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;" 
                                                 target="_blank" title="{{my.0_clickhere}}">{{my.0_clickhere}}</a>{{my.8_optout1}}</span>
                                                                                 </td>
                                                                             </tr>
@@ -3370,35 +3377,22 @@
                                         <tbody>
                                             <tr>
                                                 <td>
+                                                   
                                                     <table width="${singleCTAModuleWidth}" border="0" cellspacing="0" cellpadding="0" class="eighty give_button" align="${singleCTAModuleAlignment}">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="active textcenter" style="font-family: Arial, sans-serif; font-size: 16px; mso-padding-alt: 7px 20px; color: ${singleCTAModuleTextColor}; border: 2px solid ${singleCTAModuleBorderColor}; background-color:${singleCTAModuleBackgroundColor};border-radius:5px;line-height:25px;" bgcolor="${singleCTAModuleBackgroundColor}" align="${singleCTAModuleAlignment}">
-                                                                   
-                                                                    <table border="0" cellspacing="0" cellpadding="0" align="${singleCTAModuleAlignment}"> 
-                                                                        <tbody> 
-                                                                          <tr> 
-                                                                            <td class="a-white"> 
-                                                                                <span style="{{my.wordbreak}}">
-                                                                                    <div class="mktEditable a-white" id="singleCTAModuleCTA" mktoName="Single CTA Module CTA"> 
-                                                                                        <!--[if mso]>
-                                                                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="height:36px;v-text-anchor:middle;width:${singleCTAModuleWidth};" arcsize="3%" strokecolor="${singleCTAModuleBackgroundColor}" fillcolor="${singleCTAModuleBackgroundColor}">
-                                                                                                <w:anchorlock/>
-                                                                                                <center style="color:${singleCTAModuleTextColor};font-family:Helvetica, Arial,sans-serif;font-size:16px;">{{my.18_singleCTAModuleText}}</center>
-                                                                                            </v:roundrect>
-                                                                                        <![endif]--> 
-                                                                                        <a href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="background-color:${singleCTAModuleBackgroundColor};border:1px solid ${singleCTAModuleBackgroundColor};border-radius:2px;color:${singleCTAModuleTextColor};display:inline-block;font-family:sans-serif;font-size:16px;line-height:44px;text-align:center;text-decoration:none;width:${singleCTAModuleWidth};-webkit-text-size-adjust:none;mso-hide:all;"><strong>{{my.18_singleCTAModuleText}}</strong></a> 
-                                                                                    </div>
-                                                                                </span>
-                                                                            </td> 
-                                                                          </tr> 
-                                                                        </tbody> 
-                                                                    </table>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
+                                                        <tr>
+                                                          <td>
+                                                            <div>
+                                                              <!--[if mso]>
+                                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="height:36px;v-text-anchor:middle;width:${singleCTAModuleWidth};" arcsize="3%" strokecolor="${singleCTAModuleBackgroundColor}" fillcolor="${singleCTAModuleBackgroundColor}">
+                                                                    <w:anchorlock/>
+                                                                    <center style="color:${singleCTAModuleTextColor};font-family:Helvetica, Arial,sans-serif;font-size:16px;"><strong>{{my.18_singleCTAModuleText}}</strong></center>
+                                                                </v:roundrect>
+                                                            <![endif]--> 
+                                                            <a href="{{my.18_singleCTAModuleURL}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=cta_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}" style="background-color:${singleCTAModuleBackgroundColor};border:1px solid ${singleCTAModuleBackgroundColor};border-radius:2px;color:${singleCTAModuleTextColor};display:inline-block;font-family:sans-serif;font-size:16px;line-height:44px;text-align:center;text-decoration:none;width:${singleCTAModuleWidth}px;-webkit-text-size-adjust:none;mso-hide:all;"><strong>{{my.18_singleCTAModuleText}}</strong></a> 
+                                                            </div>
+                                                          </td>
+                                                        </tr>
                                                     </table>
-                                                    
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -3406,7 +3400,7 @@
                                 </td>
                             </tr>
                            
-							              <!-- 19. Headline Text Module -->
+							<!-- 19. Headline Text Module -->
                             <tr class="mktoModule" id="headlineTextModule" mktoname="19. Headline Text Module" mktoAddByDefault="false">
                                 <td>
                                     <table class="wrapper SecondaryTextWrapper" width="660" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#F8F8F8">
@@ -3421,7 +3415,7 @@
                                                             <tr>
                                                                 <td style="font-family: Arial, Helvetica, sans-serif; font-size:20px; color:#000000; line-height: 28px;text-align: ${headlineTextModuleTextAlign};" class="wrapper linkControlNoUnderline">
                                                                     <div class="mktoText" id="headlineText" mktoname="Headline Text">
-                                                                        <a href="https://{{my.0_domainname}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=search_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
+                                                                        <a href="https://{{my.0_domainname}}?utm_medium={{my.utm_medium}}&amp;utm_source={{my.utm_source}}&amp;utm_campaign={{Campaign.ID:default=0}}_{{my.0_programname}}&amp;utm_content=headline_{{my.0_country_url}}&amp;utm_cid={{lead.WT_v_sub2}}"
                                                                         style="text-decoration: none !important; color: #000000 !important;"
                                                                         target="_blank" class="linkControl3 linkControlNoUnderline" title="{{my.19_headlineText}}">{{my.19_headlineText}}</a>
                                                                     </div>
