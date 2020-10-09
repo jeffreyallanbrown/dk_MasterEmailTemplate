@@ -155,7 +155,7 @@
         }
 
         .footerOptOut {
-        display: ${showFooterOptOut} !important;
+            ${showFooterOptOut} !important;
         }
 
         .header3AHideImage {
@@ -370,7 +370,7 @@
 
     <!-- 16a & 16b. Footer Module -->
     <meta class="mktoColor" id="footerModuleBackgroundColor" mktoName="Footer  Module - Background Color" default="#eeeeee" mktoModuleScope='true'>
-    <meta class='mktoBoolean' id='showFooterOptOut' mktoName="Show Footer Opt Out" true_value='' false_value="none;mso-hide:all" default='true' mktoModuleScope='true'>
+    <meta class='mktoBoolean' id='showFooterOptOut' mktoName="Show Footer Opt Out" true_value='' false_value="display:none;mso-hide:all" default='true' mktoModuleScope='true'>
 
     <!-- 17. Body Text Module -->
     
@@ -3308,7 +3308,7 @@
                                                                             <tr class="footerOptOut" style="display: ${showFooterOptOut};">
                                                                             <td class="linkcontrol2 copyright footerOptOut" align="center" style="font-family: Arial, sans-serif; font-size:10px; line-height:14px; color:#5a5a5a;display:${showFooterOptOut}">
                                                                                 <span style="{{my.wordbreak}}" class="linkControl2 footerOptOut">{{my.8_optout}}
-                                                                                <a class="linkcontrol2 mktNotrack footerOptOut" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;utm_cid={{lead.WT_v_sub2}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;display: ${showFooterOptOut};" 
+                                                                                <a class="linkcontrol2 mktNotrack footerOptOut" href="https://{{my.0_domainname}}/classic/EmailUnsubscribe.aspx?e={{lead.Email Address}}&amp;{{my.optoutcustomerid}}&amp;mktid={{lead.ID}}&amp;jobid={{Campaign.ID:default=0}}&amp;lang={{my.0_languagecode}}&amp;program={{my.0_programname}}&amp;utm_cid={{lead.WT_v_sub2}}&amp;mkt_tok=##MKT_TOK##" style="text-decoration: underline; color: #5a5a5a !important;${showFooterOptOut};" 
                                                 target="_blank" title="{{my.0_clickhere}}">{{my.0_clickhere}}</a>{{my.8_optout1}}</span>
                                                                                 </td>
                                                                             </tr>
